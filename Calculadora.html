@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="grade">
+        <h1>Calculadora Simples</h1>
+        <div> <!--display-->
+            <input type="text" name="tela" id="display" readonly>
+        </div> 
+
+        <div> <!--grade-->
+            
+            <div> <!--1ª linha de botões --> 
+                <input class="span2" type="button" value="C" onclick="limpar()">
+                <input type="button" value="<" onclick="deletar()">
+                <input type="button" value="/" onclick="botao('/')">
+            </div> 
+            <div> <!--2ª linha de botões -->
+                <input type="button" value="1" onclick="botao(1)">
+                <input type="button" value="2" onclick="botao(2)">
+                <input type="button" value="3" onclick="botao(3)">
+                <input type="button" value="*" onclick="botao('*')">
+            </div> 
+            <div> <!--3ª linha de botões -->
+                <input type="button" value="4" onclick="botao(4)">
+                <input type="button" value="5" onclick="botao(5)">
+                <input type="button" value="6" onclick="botao(6)">
+                <input type="button" value="+" onclick="botao('+')">
+            </div> 
+            <div> <!--4ª linha de botões -->
+                <input type="button" value="7" onclick="botao(7)">
+                <input type="button" value="8" onclick="botao(8)">
+                <input type="button" value="9"onclick="botao(9)">
+                <input type="button" value="-"onclick="botao('-')">
+            </div> 
+            <div> <!--5ª linha de botões -->
+                <input type="button" value="." onclick="botao('.')">
+                <input type="button" value="0" onclick="botao(0)">
+                <input class="span2" type="button" value="=" onclick="calcular()">
+            </div> 
+
+        </div>
+        <p>Kevin Machado</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
